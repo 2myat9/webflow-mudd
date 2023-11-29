@@ -37,8 +37,9 @@ const Page = () => {
 
   return (
     <div className="flex flex-col items-start relative w-full">
+      <div className="flex items-center justify-center w-full text-white">Welcome to Webflow</div>
       <div className="flex overflow-hidden w-full">
-        <div
+        {/* <div
           id="sidebar"
           className="border-r border-white/20 w-1/4 flex flex-col h-screen"
         >
@@ -57,7 +58,7 @@ const Page = () => {
               })}
             </Switch.Group>
           </div>
-        </div>
+        </div> */}
         <div id="main" className="w-3/4 flex flex-col h-full">
           <div className="flex-grow overflow-auto">
             <ComponentGrid components={filteredComponents} />
